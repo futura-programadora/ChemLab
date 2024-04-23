@@ -5,20 +5,31 @@
     width: 0px;*/
 }
 
+@font-face {
+    font-family: 'Android' ;
+    src: url('fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
 :root {
     --cor0:#000000;
     --cor1:#52057B;
     --cor2:#892CDC;
     --cor3:#BC6FF1;
+    --cor4:#fcd9ff;
+
+    --fonte-android: 'Android', 'cursive';
 }
+
+
 
 body {
     margin: auto;
-    background-color: #e1bff8;
-
+    background-color:var(--cor3);
 }
 
 header > h1 {
+    font-family: var(--fonte-android);
     color: white;
     text-align: center;
     margin: 0px;
@@ -27,17 +38,39 @@ header > h1 {
 
 header {
     background-image:linear-gradient(to bottom, var(--cor3), var(--cor1));
-    min-height: 150px;
+    min-height: 160px;
     padding-top: 40px;
     box-shadow: 10px 10px 10px #0000005d;
 }
 
 header p {
     text-align: center;
+    font-size: 20px;
     color: white;
+    margin-bottom: 4px;
+}
+nav > a {
+    background-color: var(--cor1);
+}
+
+a.cabecalho{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+a.cabecalho:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
 }
 
 main {
+    background-color:var(--cor4);
+    max-width: 800px;
+    min-width: 300px;
     margin: auto;
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
@@ -56,31 +89,34 @@ div {
 
 }
 
-.migame {
-    background-image: url('');
-}
-nav > a {
-    background-color: #52057B;
+div:hover {
+    box-shadow: 8px 10px 8px var(--cor1);
 }
 
-a.cabecalho{
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.5s;
+img.migame1, img.migame2, img.migame3, img.migame4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
 }
 
-a.cabecalho:hover {
-    background-color: var(--cor3);
-    color: var(--cor5);
+
+
+p.tipodogame {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    padding-left: 15px ;
+    background-image:linear-gradient(to right, var(--cor1), var(--cor3),var(--cor4) );
 }
 
-a.migame1, a.migame2, a.migame3, a.migame4 {
-    color: white;
-    margin: 25px;
+footer {
+    background-color: #892CDC;
+    color: var(--cor4);
+    text-align: center;
+    font: arial, helvetica, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    
 }
-
 
 
