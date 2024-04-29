@@ -72,6 +72,10 @@ main {
     padding-top: 10px;
 }
 
+main > div {
+    max-width: 100vh;
+}
+
 p.destaque {
     font-family: var(--fonte-android);
     color: var(--cor4);
@@ -80,8 +84,10 @@ p.destaque {
 }
 
 div {
-    height: 100px;
-    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 70px;
+    min-height: 70px;
     border: 1px solid black;
     border-radius: 10px;
     display: inline-block;
@@ -100,6 +106,7 @@ div {
     top: 50%;
     transform: translate(-50%,-50%);
 }
+
 #game2 {
     position: absolute;
     left: 30%;
