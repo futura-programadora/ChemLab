@@ -34,14 +34,18 @@ header {
     min-height: 160px;
     padding-top: 40px;
     box-shadow: 10px 10px 10px #0000005d;
+    
 }
 
 header p {
     text-align: center;
+    font-size: 2vw;/*ajuste da letra a tela*/
     color: white;
     margin-bottom: 4px;
-    font-size: 2vw;
+    margin-top: 4px;
+    
 }
+
 nav > a {
     background-color: var(--cor1);
 }

@@ -39,9 +39,11 @@ header {
 
 header p {
     text-align: center;
-    font-size: 2vw;
+    font-size: 2vw;/*ajuste da letra a tela*/
     color: white;
     margin-bottom: 4px;
+    margin-top: 4px;
+    
 }
 
 main > h1 {
