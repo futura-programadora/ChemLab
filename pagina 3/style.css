@@ -47,7 +47,7 @@ header p {
 
 nav > a {
     background-color: var(--cor1);
-    background-size: cover;
+    font-size: 5vw;
 }
 
 a.cabecalho{
