@@ -38,7 +38,7 @@ header > h1 {
 
 header {
     background-image:linear-gradient(to bottom, var(--cor3), var(--cor1));
-    min-height: 160px;
+    min-height: 200px;
     padding-top: 40px;
     box-shadow: 10px 10px 10px #0000005d;
 }
