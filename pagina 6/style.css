@@ -80,8 +80,10 @@ p.destaque {
 }
 
 div {
-    height: 100px;
-    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    min-width: 70px;
+    min-height: 70px;
     border: 1px solid black;
     border-radius: 10px;
     display: inline-block;
