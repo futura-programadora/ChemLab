@@ -112,15 +112,13 @@ div:hover {
 .video1 {
     width: 300px;
     height: 200px;
-    padding-left: 15px;
     border-radius: 10px;
 }
 
-.video2 {
+.video2  {
     width: 300px;
     height: 200px;
     border-radius: 10px;
-    padding-left: 15px;
 }
 
 
@@ -128,7 +126,10 @@ div:hover {
     width: 300px;
     height: 200px;
     border-radius: 10px;
-    padding-left: 15px;
+}
+
+a.video {
+    padding: 100px;
 }
 
 .video1:hover {
@@ -142,8 +143,6 @@ div:hover {
 .video3:hover {
     box-shadow: 8px 10px 8px var(--cor1);
 }
-
-
 
 
 footer {
