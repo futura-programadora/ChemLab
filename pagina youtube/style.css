@@ -74,6 +74,7 @@ main {
     border-bottom-right-radius: 10px;
     padding-top: 10px;
     box-shadow: 8px 10px 8px var(--cor1);
+    position: relative;
 }
 
 p.destaque {
@@ -109,41 +110,25 @@ div:hover {
     box-shadow: 8px 10px 8px var(--cor1);
 }
 
-.video1 {
-    width: 300px;
-    height: 200px;
+section.videos {
+    display: block;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.video1, .video2, .video3 {
+    width: 400px;
+    height: 250px;
     border-radius: 10px;
 }
 
-.video2  {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-}
-
-
-.video3 {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-}
-
-a.video {
-    padding: 100px;
-}
-
-.video1:hover {
+.video1:hover, .video2:hover, .video3:hover {
     box-shadow: 8px 10px 8px var(--cor1);
 }
-
-.video2:hover {
-    box-shadow: 8px 10px 8px var(--cor1);
-}
-
-.video3:hover {
-    box-shadow: 8px 10px 8px var(--cor1);
-}
-
 
 footer {
     background-color: #892CDC;
