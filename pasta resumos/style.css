@@ -75,7 +75,7 @@ a.cabecalho:hover {
 main {
     background-color:var(--cor4);
     max-width: 800px;
-    min-width: 300px;
+    min-width: 400px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
