@@ -51,6 +51,7 @@ main > h1 {
     font-family: var(--fonte-android);
     padding: 10px;
     background-image:linear-gradient(to right, var(--cor1), var(--cor3),var(--cor4) );
+    
 }
 
 
@@ -75,7 +76,7 @@ a.cabecalho:hover {
 main {
     background-color:var(--cor4);
     max-width: 800px;
-    min-width: 400px;
+    min-width: 300px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
