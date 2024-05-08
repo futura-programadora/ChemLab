@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Android' ;
-    src: url('fontes/idroid.otf') format('opentype');
+    src: url('./fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
@@ -25,7 +25,7 @@
 
 body {
     margin: auto;
-    background-color:var(--cor3);
+    background-color:var(--cor4);
 }
 
 header > h1 {
@@ -50,8 +50,12 @@ header p {
     color: white;
     margin-bottom: 4px;
     margin-top: 4px;
-    
 }
+
+.destaque {
+    font-size: 1.5vw;
+}
+
 nav > a {
     background-color: var(--cor1);
 }
@@ -72,44 +76,57 @@ a.cabecalho:hover {
 
 main {
     background-color:var(--cor4);
-    max-width: 800px;
-    min-width: 300px;
+    background-image: url('possivel\ fundo.webp');
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    max-height: 900px;
+    min-height: 500px;
+    max-width: 900px;
+    min-width: 400px;
     margin: auto;
     margin-bottom: 20px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding-top: 10px;
-}
-
-div {
-    height: 300px;
-    width: 300px;
-    border: 1px solid black;
     border-radius: 10px;
-    display: block;
-    margin: auto; 
-    box-shadow: 10px 10px 10px #8a2cdc57;
-
 }
 
-div:hover {
-    box-shadow: 8px 10px 8px var(--cor1);
+#telefone {
+    position: absolute;
+    top: 80%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+
+    height: 327px;
+    width: 160px;
+    border-radius: 15px;
+    background: url("./frame-iphone.png") no-repeat;
+    background-size:  160px 327px ;
+    background-color:var(--cor4);
+}
+iframe#tela {
+    position: relative;
+    top: 42px;
+    left: 11px;
+    width: 138px;
+    height: 246px;
 }
 
-img.migame1, img.migame2, img.migame3, img.migame4 {
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    
+section#sociais {
+    text-align: center;
+    padding-top: 50px;
 }
 
+section#sociais img {
+    width:40px;
+    margin: 5px;
+    border-radius: 50px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.696);
+}
 
-
-p.tipodogame {
-    font-family: var(--fonte-android);
-    color: var(--cor4);
-    padding-left: 15px ;
-    background-image:linear-gradient(to right, var(--cor1), var(--cor3),var(--cor4) );
+section#sociais img:hover {
+    border: 1px solid gray;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.704);
+    transition: transform .3s;
 }
 
 footer {
@@ -121,5 +138,3 @@ footer {
     font-size: 18px;
     
 }
-
-

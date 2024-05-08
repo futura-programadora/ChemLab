@@ -1,8 +1,13 @@
 @charset "UTF-8";
 
+* {
+    /*height: 0px;
+    width: 0px;*/
+}
+
 @font-face {
     font-family: 'Android' ;
-    src: url('./fontes/idroid.otf') format('opentype');
+    src: url('fontes/idroid.otf') format('opentype');
     font-weight: normal;
 }
 
@@ -15,6 +20,8 @@
 
     --fonte-android: 'Android', 'cursive';
 }
+
+
 
 body {
     margin: auto;
@@ -45,7 +52,6 @@ header p {
     margin-top: 4px;
     
 }
-
 nav > a {
     background-color: var(--cor1);
 }
@@ -68,7 +74,6 @@ main {
     background-color:var(--cor4);
     max-width: 800px;
     min-width: 300px;
-    height: 400px;
     margin: auto;
     margin-bottom: 20px;
     border-bottom-left-radius: 10px;
@@ -76,68 +81,35 @@ main {
     padding-top: 10px;
 }
 
-main > div {
-    max-width: 100vh;
-}
-
-p.destaque {
-    font-family: var(--fonte-android);
-    color: var(--cor4);
-    padding-left: 15px ;
-    background-image:linear-gradient(to right, var(--cor1), var(--cor3),var(--cor4) );
-}
-
 div {
-    max-width: 100px;
-    max-height: 100px;
-    min-width: 70px;
-    min-height: 70px;
+    height: 300px;
+    width: 300px;
     border: 1px solid black;
     border-radius: 10px;
-    display: inline-block;
+    display: block;
     margin: auto; 
     box-shadow: 10px 10px 10px #8a2cdc57;
-}
 
-#container {
-    position: relative;
-}
-#game1 {
-    border: 1px solid black;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-#game2 {
-    position: absolute;
-    left: 30%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-#game3 {
-    position: absolute;
-    left: 10%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-#game4 {
-    position: absolute;
-    left: 70%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-#game5 {
-    position: absolute;
-    left: 90%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 }
 
 div:hover {
     box-shadow: 8px 10px 8px var(--cor1);
+}
+
+img.migame1, img.migame2, img.migame3, img.migame4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    
+}
+
+
+
+p.tipodogame {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    padding-left: 15px ;
+    background-image:linear-gradient(to right, var(--cor1), var(--cor3),var(--cor4) );
 }
 
 footer {
@@ -149,9 +121,5 @@ footer {
     font-size: 18px;
     
 }
-.voltar {
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    padding-left: 5px;
-}
+
+
