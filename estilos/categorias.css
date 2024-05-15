@@ -121,7 +121,7 @@ section {
 
 
 div:hover {
-    box-shadow: 8px 10px 8px var(--cor1);
+    box-shadow: 8px 10px 8px #8a2cdcad;
 }
 
 footer {
