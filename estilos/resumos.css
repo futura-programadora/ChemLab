@@ -100,7 +100,7 @@ main#secundario {
 }
 
 #tela1, #tela2, #tela3 {
-
+    
 }
 
 .telefone  {  /*responsividade*/
@@ -116,9 +116,10 @@ main#secundario {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    border: 0;
+    border-radius: 10px;
+    border: 1px solid black;
 
 }
 p.destaque {
@@ -142,6 +143,17 @@ div {
 
 div:hover {
     box-shadow: 8px 10px 8px var(--cor1);
+}
+
+a {
+    text-decoration: none;
+    color: #892CDC;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #892CDC;
+    font-weight: bold;
 }
 
 footer {
