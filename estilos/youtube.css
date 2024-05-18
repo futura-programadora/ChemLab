@@ -112,7 +112,6 @@ div:hover {
 
 section.videos {
     display: block;
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -121,8 +120,8 @@ section.videos {
 }
 
 .video1, .video2, .video3 {
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 220px;
     border-radius: 10px;
 }
 
