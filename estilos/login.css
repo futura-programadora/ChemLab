@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 .login {
     display: flex;
     justify-content: center;
@@ -15,7 +19,7 @@ form {
     box-sizing: border-box;
     padding: 40px;
     width: 350px;
-    height: 75vh;
+    height: 80vh;
     backdrop-filter: brightness(10%);
     flex-direction: column;
     display: flex;
