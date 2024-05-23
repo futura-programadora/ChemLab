@@ -121,7 +121,12 @@ section {
 
 
 div:hover {
-    box-shadow: 8px 10px 8px #8a2cdcad;
+    box-shadow: 8px 10px 8px #a845ffad;
+    transform: translate(-3px, -3px);
+}
+
+div:active {
+    transform: translate(1px, 1px);
 }
 
 footer {
