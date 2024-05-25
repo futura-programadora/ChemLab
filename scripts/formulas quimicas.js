@@ -4,7 +4,9 @@ const questions = [
     { question: "Qual é a fórmula do gás carbônico?", options: ["H2O", "CO2", "HCl", "NH3"], correctAnswer: 1 },
     { question: "Qual é a fórmula do amoníaco?", options: ["H2O", "CO2", "HCl", "NH3"], correctAnswer: 3 },
     { question: "Qual é a fórmula do ácido sulfúrico?", options: ["H2SO4", "CO2", "HCl", "NH3"], correctAnswer: 0 },
-    { question: "Qual é a fórmula do hidróxido de sódio?", options: ["NaOH", "CO2", "HCl", "NH3"], correctAnswer: 0 }
+    { question: "Qual é a fórmula do hidróxido de sódio?", options: ["NaOH", "CO2", "HCl", "NH3"], correctAnswer: 0 },
+    { question: "Qual é a fórmula química do cloreto de sódio?", options: ["NaCl", "KCl", "NaOH", "HCl"], correctAnswer: 0 },
+    { question: "Qual é a fórmula química do dióxido de carbono?", options: ["CO", "CO2", "CH4", "C2O"], correctAnswer: 1 }
 ];
 
 let currentQuestionIndex = 0;
@@ -71,7 +73,7 @@ function showNextQuestion() {
         displayQuestion();
         resultElement.style.display = 'none'; // Oculta o resultado da resposta anterior
     } else {
-        scoreElement.textContent = `Pontuação final: ${score} pontos`; // Exibe o resultado final
+        scoreElement.textContent = `Quiz finalizado, Pontuação final: ${score} pontos`; // Exibe o resultado final
         resultElement.style.display = 'none'; // Oculta o resultado da última resposta
         scoreElement.style.display = 'block'; // Exibe a pontuação final
     }

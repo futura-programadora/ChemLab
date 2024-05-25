@@ -1,10 +1,19 @@
 const questions = [
-    { question: "", options: ["", "", "", ""], correctAnswer: 0 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 2 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 1 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 3 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 0 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 0 }
+    { question: "Qual é o símbolo químico do elemento ouro?", options: ["Ag", "Au", "Pb", "Pt"], correctAnswer: 1 },
+
+    { question: "Qual elemento químico tem o número atômico 1?", options: [" Hélio", "Lítio", "Hidrogênio", "Berílio"], correctAnswer: 2 },
+
+    { question: "Que elemento é conhecido como o metal líquido à temperatura ambiente?", options: [" Ferro", "Mercúrio", "Cobre", " Alumínio"], correctAnswer: 1 },
+
+    { question: "Qual elemento é o mais abundante na crosta terrestre?", options: ["Silício", "Alumínio", "Oxigênio", " Ferro"], correctAnswer: 2 },
+
+    { question: "Qual é o símbolo do elemento ferro?", options: ["Fe", "F", "Fr", "Fb"], correctAnswer: 0 },
+
+    { question: "Qual é o nome do elemento com o símbolo químico K?", options: ["Cálcio", "Potássio", "Criptônio", "Cobalto"], correctAnswer: 1 },
+
+    { question: " Qual elemento é usado na fabricação de baterias de íon-lítio?", options: [" Sódio", "Potássio", "Lítio", "Magnésio"], correctAnswer: 2 },
+
+    { question: " Qual elemento químico tem o número atômico 6?", options: ["Nitrogênio", "Carbono", "Oxigênio", "Boro"], correctAnswer: 1 },
 ];
 
 let currentQuestionIndex = 0;
@@ -71,8 +80,9 @@ function showNextQuestion() {
         displayQuestion();
         resultElement.style.display = 'none'; // Oculta o resultado da resposta anterior
     } else {
-        scoreElement.textContent = `Pontuação final: ${score} pontos`; // Exibe o resultado final
+        scoreElement.textContent = `Quiz finalizado, Pontuação final: ${score} pontos`; // Exibe o resultado final
         resultElement.style.display = 'none'; // Oculta o resultado da última resposta
         scoreElement.style.display = 'block'; // Exibe a pontuação final
     }
 }
+

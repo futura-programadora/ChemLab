@@ -1,10 +1,19 @@
 const questions = [
-    { question: "", options: ["", "", "", ""], correctAnswer: 0 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 2 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 1 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 3 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 0 },
-    { question: "", options: ["", "", "", ""], correctAnswer: 0 }
+    { question: "Qual é a fórmula química do cloreto de sódio, conhecido como sal de cozinha?", options: [" Na₂CO₃", "NaCl", "KCl", " NaOH"], correctAnswer: 1 },
+
+    { question: "Qual é a substância química conhecida como água oxigenada?", options: [" H₂O", "H₂", "H₂O₂", "HO"], correctAnswer: 2 },
+
+    { question: "Qual é a principal substância química no vinagre?", options: [" Ácido cítrico", "Ácido acético", "Ácido sulfúrico", "Ácido clorídrico"], correctAnswer: 1 },
+
+    { question: "Qual é a fórmula química do bicarbonato de sódio?", options: [" Na₂CO₃", "NaClO₃", " NaOH", " NaHCO₃"], correctAnswer: 3 },
+
+    { question: "Qual é a fórmula química do açúcar de mesa, ou sacarose?", options: [" C₆H₁₂O₆", "C₁₂H₂₂O₁₁", "C₆H₆", " C₁₀H₂₀O₁₀"], correctAnswer: 1 },
+
+    { question: "Qual é a fórmula química do etanol, presente em bebidas alcoólicas?", options: ["C₂H₅OH", " CH₄", " C₃H₈", " C₂H₄"], correctAnswer: 0 },
+
+    { question: " Qual é a substância química usada como principal componente do gás de cozinha (GLP)?", options: ["Metano", "Butano", "Etano", "Propano"], correctAnswer: 3 },
+
+    { question: "Qual é a fórmula química da amônia?", options: ["NH₄", "NH₄OH", " NH₃", "NO₂"], correctAnswer: 2 }
 ];
 
 let currentQuestionIndex = 0;
@@ -71,7 +80,7 @@ function showNextQuestion() {
         displayQuestion();
         resultElement.style.display = 'none'; // Oculta o resultado da resposta anterior
     } else {
-        scoreElement.textContent = `Pontuação final: ${score} pontos`; // Exibe o resultado final
+        scoreElement.textContent = `Quiz finalizado, Pontuação final: ${score} pontos`; // Exibe o resultado final
         resultElement.style.display = 'none'; // Oculta o resultado da última resposta
         scoreElement.style.display = 'block'; // Exibe a pontuação final
     }

@@ -39,3 +39,43 @@ body, html {
 #result, #score {
     margin-top: 20px;
 }
+
+.hidden {
+    display: none;
+}
+
+#quiz-container  {
+    text-align: center;
+    margin-top: 50px;  
+    transition: 0.2s;
+}
+
+#voltar {
+    background-color: purple;
+    color: white;
+    padding:10px;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#voltar:hover, #linkvoltar:hover {
+    background-color:  rgb(173, 1, 173);
+    color: white;
+    transition: 0.2s;
+    transform: translate(-2px, -2px);
+    box-shadow: 2px 2px 5px purple;
+}
+
+#recarregar {
+   height: 30px;
+   width: 30px;
+   border-radius: 50px;
+   transition: transform 0.8s linear;
+}
+
+#recarregar:hover {
+    transform: rotate(360deg);
+}
