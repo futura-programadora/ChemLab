@@ -1,3 +1,4 @@
+
 const questions = [
     { question: "Qual é a fórmula da água?", options: ["H2O", "CO2", "HCl", "NH3"], correctAnswer: 0 },
     { question: "Qual é a fórmula do ácido clorídrico?", options: ["H2O", "CO2", "HCl", "NH3"], correctAnswer: 2 },

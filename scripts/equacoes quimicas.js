@@ -1,3 +1,4 @@
+
 const questions = [
     { question: "Qual é o produto da reação de combustão completa do metano", options: [" H₂O e CO", "CO₂ e H₂O", "CO e H₂", "C e H₂O"], correctAnswer: 1 },
 

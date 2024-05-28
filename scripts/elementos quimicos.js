@@ -1,3 +1,4 @@
+
 const questions = [
     { question: "Qual é o símbolo químico do elemento ouro?", options: ["Ag", "Au", "Pb", "Pt"], correctAnswer: 1 },
 

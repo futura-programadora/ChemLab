@@ -1,3 +1,4 @@
+
 const questions = [
     { question: "Qual é a fórmula química do cloreto de sódio, conhecido como sal de cozinha?", options: [" Na₂CO₃", "NaCl", "KCl", " NaOH"], correctAnswer: 1 },
 
