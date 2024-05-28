@@ -5,7 +5,7 @@ const questions = [
 
     { question: "Na reação de neutralização entre ácido clorídrico (HCl) e hidróxido de sódio (NaOH), quais são os produtos?", options: ["NaCl e H₂", "NaCl e H₂O", "NaOH e HCl", "H₂O e O₂"], correctAnswer: 1 },
 
-    { question: "Qual é o reagente limitante na reação entre 2 mols de H₂ e 1 mol de O₂?", options: [" H₂", "O₂", " H₂O", "Ambos são limitantes"], correctAnswer: 1 },
+    { question: "Qual é o reagente limitante na reação entre 1 mol de H₂ e 1 mol de O₂?", options: [" H₂", "O₂", " H₂O", "Ambos são limitantes"], correctAnswer: 1 },
 
     { question: " Qual é a equação balanceada da decomposição do peróxido de hidrogênio (H₂O₂) em água e oxigênio?", options: [" 2H₂O₂ → 2H₂O + O₂", "H₂O₂ → H₂O + O₂", "H₂O₂ → H₂ + O₂", " 2H₂O₂ → H₂O + O₂"], correctAnswer: 0 },
 
