@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./estilos/login.css">
-    <link rel="shortcut icon" href="./estilos/imagens/favicon.png" type="image/x-icon">
+    <title>Login - ViageBem</title>
+    <link rel="shortcut icon" href="./estilos/imagens/ChemLab-removebg-preview.png" type="image/x-icon">
 </head>
+
+<!-- Link Biblioteca de icones-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+
+<!-- Link para o CSS Style-->
+<link rel="stylesheet" href="style.css">
+
 <body>
-    <div class="login">
-        <form action="./paginas extras/inicio.html">
-            <h1>Faça Login</h1>
-            <label for="username">Nome de Usuário/E-mail</label>
-            <input type="text" id="username" required>
-            <label for="password">Senha</label>
-            <input type="password" id="password" required>
-            <button type="submit">Enviar</button>
-            <a href="./paginas extras/registre se.html"><h2>Não tem conta? Registre-se</h2></a>
-        </form>
-    </div>
+    <span class="blur"></span>
+    <main class="login">
+        <form class="container">
+            <img src="./estilos/imagens/ChemLab-removebg-preview.png" alt="Logo" class="logo">
+            <h1 class="headline">Bem-Vindo(a)</h1>
+            <h2 class="subheadline">Insira seus dados de acesso</h2>
+
+            <div class="form">
+                <label class="label-email" for="email">Email</label>
+                <i class="bx bxs-user"></i>
+                <input class="input-email" type="email" id="email" placeholder="Seu email:" autocomplete="off">
+
+                <label class="label-password" for="password">Senha</label>
+                <i class="bx bxs-key"></i>
+                <input class="input-password" type="password" id="password" placeholder="Sua senha">
+
+                <a class="forgot">Esqueceu a senha?</a>
+
+                <input class="button" type="submit" value="login" action="">
+            </div>
+    </form>
+
+    </main>
+    <span class="blur"></span>
 </body>
 </html>

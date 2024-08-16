@@ -1,15 +1,22 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const userIcon = document.getElementById('userIcon');
-    const logoutPopup = document.getElementById('logoutPopup');
-    const logoutLink = document.getElementById('logoutLink');
+function scrollToElement(elementSelector, instance = 0) {
+    const elements = document.querySelectorAll(elementSelector);
+    if (elements.length > instance) {
+        elements[instance].scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
-    userIcon.addEventListener('click', function () {
-        logoutPopup.style.display = logoutPopup.style.display === 'block' ? 'none' : 'block';
-    });
+const link1 = document.getElementById("link1");
+const link2 = document.getElementById("link2");
+const link3 = document.getElementById("link3");
 
-    window.addEventListener('click', function (e) {
-        if (!userIcon.contains(e.target) && !logoutPopup.contains(e.target)) {
-            logoutPopup.style.display = 'none';
-        }
-    });
+link1.addEventListener('click', () => {
+    scrollToElement('.header');
+});
+
+link2.addEventListener('click', () => {
+    scrollToElement('.header', 1);
+});
+
+link3.addEventListener('click', () => {
+    scrollToElement('.column');
 });

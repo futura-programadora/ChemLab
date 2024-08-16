@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Android' ;
+    src: url('./fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0:#000000;
+    --cor1:#52057B;
+    --cor2:#892CDC;
+    --cor3:#BC6FF1;
+    --cor4:#fcd9ff;
+
+    --fonte-android: 'Android', 'cursive';
+}
+
+body {
+    margin: auto;
+    background-color:var(--cor3);
+}
+
+header > h1 {
+    font-family: var(--fonte-android);
+    color: white;
+    text-align: center;
+    margin: 0px;
+    text-shadow: 1px 3px 1px #52057B;
+}
+
+header {
+    background-image:linear-gradient(to bottom, var(--cor3), var(--cor1));
+    min-height: 160px;
+    padding-top: 40px;
+    box-shadow: 10px 10px 10px #0000005d;
+    
+}
+
+header p {
+    text-align: center;
+    font-size: 2.5vw;/*ajuste da letra a tela*/
+    color: white;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    
+}
+
+nav > a {
+    background-color: var(--cor1);
+}
+
+a.cabecalho{
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+a.cabecalho:hover {
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+
+main {
+    background-color:var(--cor4);
+    max-width: 800px;
+    min-width: 300px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px; 
+}
+
+main > div {
+    max-width: 100vh;
+}
+
+p.destaque {
+    font-family: var(--fonte-android);
+    color: var(--cor4);
+    padding-left: 15px ;
+    background-image:linear-gradient(to right, var(--cor1), var(--cor3),var(--cor4) );
+}
+
+p.aviso {
+    padding: 10px;
+    font-family: var(--fonte-android);
+    font-size: 12px;
+}
+
+div {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: auto; 
+    box-shadow: 10px 10px 10px #8a2cdc57;
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#container {
+    position: relative;
+}
+
+#game1, #game2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    flex: 1 1 30%;
+    text-align: center;
+    width: 130px;
+    height: 200px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+img.quiz {
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    position: left top;
+    background-size: 100vw;
+    border: 1px solid black;
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div:hover {
+    box-shadow: 8px 10px 8px #a845ffad;
+    transform: translate(-3px, -3px);
+}
+
+div:active {
+    transform: translate(1px, 1px);
+}
+
+footer {
+    background-color: #892CDC;
+    color: var(--cor4);
+    text-align: center;
+    font: arial, helvetica, sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    
+}
+.voltar {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    padding-left: 5px;
+}
