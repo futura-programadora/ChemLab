@@ -8,6 +8,12 @@
     font-weight: 400;
 }
 
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #6e00b8;
+    z-index: 50;
+}
+
 .login {
     height: 100vh;
     background: linear-gradient(135deg, #18181B, #18181B);
@@ -109,6 +115,11 @@
     color: #1757b9;
 }
 
+.convidado {
+    text-decoration: none;
+    color: #999999;
+    text-align: center;
+}
 .button {
     width: 100%;
     border-radius: 4px;

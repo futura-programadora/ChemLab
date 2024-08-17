@@ -78,6 +78,11 @@ nav{
     background-color: #7f00d3;
 }
 
+.link-entrar{
+    text-decoration: none;
+    color: white;
+}
+
 .container{
     max-width: 1200px;
     margin: auto;

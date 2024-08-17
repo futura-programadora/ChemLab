@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - ViageBem</title>
     <link rel="shortcut icon" href="./estilos/imagens/ChemLab-removebg-preview.png" type="image/x-icon">
+
+    <link rel="shortcut icon" href="./estilos/imagens/ChemLab-removebg-preview.png" type="image/x-icon">
 </head>
 
 <!-- Link Biblioteca de icones-->
@@ -15,28 +17,35 @@
 
 <body>
     <span class="blur"></span>
+    <span class="blur"></span>
+    <span class="blur"></span>
     <main class="login">
-        <form class="container">
+        <form class="container" action="./paginas extras/home.html">
             <img src="./estilos/imagens/ChemLab-removebg-preview.png" alt="Logo" class="logo">
             <h1 class="headline">Bem-Vindo(a)</h1>
             <h2 class="subheadline">Insira seus dados de acesso</h2>
 
-            <div class="form">
+            <div class="form" action="./paginas extras/home.html">
                 <label class="label-email" for="email">Email</label>
                 <i class="bx bxs-user"></i>
-                <input class="input-email" type="email" id="email" placeholder="Seu email:" autocomplete="off">
+                <input class="input-email" type="email" id="email" placeholder="Seu email:" autocomplete="on" required>
 
                 <label class="label-password" for="password">Senha</label>
                 <i class="bx bxs-key"></i>
-                <input class="input-password" type="password" id="password" placeholder="Sua senha">
+                <input class="input-password" type="password" id="password" placeholder="Sua senha" required>
 
-                <a class="forgot">Esqueceu a senha?</a>
+                <a class="forgot" href="cadastre-se-novamente.html">Esqueceu a senha?</a>
+                <a href=""></a>
+                <a class="convidado" href="./paginas extras/home.html">Clique aqui para conhecer nosso site primeiro!</a><br>
 
-                <input class="button" type="submit" value="login" action="">
             </div>
+
+            <input class="button" type="submit" value="login">
     </form>
 
     </main>
+    <span class="blur"></span>
+    <span class="blur"></span>
     <span class="blur"></span>
 </body>
 </html>
