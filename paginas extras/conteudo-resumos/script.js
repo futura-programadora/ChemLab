@@ -6,8 +6,25 @@ function scrollToElement(elementSelector, instance = 0) {
 }
 
 const link = document.getElementById("link");
+const link0 = document.getElementById("link0");
 const link1 = document.getElementById("link1");
 const link2 = document.getElementById("link2");
+const link3 = document.getElementById("link3");
+const link4 = document.getElementById("link4");
+const link5 = document.getElementById("link5");
+const link6 = document.getElementById("link6");
+const link7 = document.getElementById("link7");
+const link8 = document.getElementById("link8");
+const link9 = document.getElementById("link9");
+const link10 = document.getElementById("link10");
+const link11 = document.getElementById("link11");
+const link12 = document.getElementById("link12");
+const link13 = document.getElementById("link13");
+const link14 = document.getElementById("link14");
+const link15 = document.getElementById("link15");
+const link16 = document.getElementById("link16");
+const link17 = document.getElementById("link17");
+
 
 link.addEventListener('click', () => {
     scrollToElement('.conteudo');
@@ -21,65 +38,65 @@ link1.addEventListener('click', () => {
     scrollToElement('.conteudo', 2);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link2.addEventListener('click', () => {
+    scrollToElement('.conteudo',3);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link3.addEventListener('click', () => {
+    scrollToElement('.conteudo',4);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link4.addEventListener('click', () => {
+    scrollToElement('.conteudo',5);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link5.addEventListener('click', () => {
+    scrollToElement('.conteudo',6);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link6.addEventListener('click', () => {
+    scrollToElement('.conteudo',7);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link7.addEventListener('click', () => {
+    scrollToElement('.conteudo',8);
 });
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
-});
-
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link8.addEventListener('click', () => {
+    scrollToElement('.conteudo',9);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
-});
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link9.addEventListener('click', () => {
+    scrollToElement('.conteudo',10);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link10.addEventListener('click', () => {
+    scrollToElement('.conteudo',11);
+});
+link11.addEventListener('click', () => {
+    scrollToElement('.conteudo',12);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
-});
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link12.addEventListener('click', () => {
+    scrollToElement('.conteudo',13);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link13.addEventListener('click', () => {
+    scrollToElement('.conteudo',14);
+});
+link14.addEventListener('click', () => {
+    scrollToElement('.conteudo',15);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link15.addEventListener('click', () => {
+    scrollToElement('.conteudo',16);
 });
 
-link.addEventListener('click', () => {
-    scrollToElement('.conteudo',);
+link16.addEventListener('click', () => {
+    scrollToElement('.conteudo',17);
+});
+
+link17.addEventListener('click', () => {
+    scrollToElement('.conteudo',18);
 });
 
 //rolagem até o elemento

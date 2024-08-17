@@ -92,7 +92,7 @@ header{
     gap: 2rem;
 }
 
-header .content h4,h4{
+header .content h4{
     margin-bottom: 1rem;
     color: #ccc;
     font-size: 1rem;
@@ -115,10 +115,25 @@ h1 {
     line-height: 4rem;
 }
 
+
+
+h4,h3,h2,ul {
+    color: white;
+    margin-bottom: 10px;
+}
+
 p {
     margin-bottom: 2rem;
     color: #ccc;
     text-align: justify;
+}
+
+a {
+    color: #fff;
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 header .content h1 span{
@@ -129,6 +144,18 @@ header .content h1 span{
 header .content p{
     margin-bottom: 2rem;
     color: #ccc;
+}
+
+button{
+    background-color: #7f00d3;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+button:hover {
+    background-color: #9b09fc;
 }
 
 @media (width < 900px){
