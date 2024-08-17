@@ -70,7 +70,7 @@ section > h2{
     border-color: #fff;
 }
 
-.categorias .categoria span{
+.categorias .categoria span {
     display: inline-block;
     background-color: #6e00b8;
     padding: 2px 9px;
@@ -101,6 +101,11 @@ section > h2{
 img{
     width: 100%;
     display: flex;
+}
+
+#game {
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
 footer{
