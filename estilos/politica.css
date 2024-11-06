@@ -1,0 +1,90 @@
+/* Reset básico de margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo fonte padrão */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #eee3ffa6;
+    color: #333;
+    padding: 20px;
+}
+
+/* Estilo para o container principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Estilo para o título principal */
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #02008d;
+    margin-bottom: 20px;
+}
+
+/* Estilo para os subtítulos */
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para os parágrafos */
+p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Estilo para a lista */
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para os links (caso tenha) */
+a {
+    color: #50b3a2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Seção principal */
+.politica {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade: ajusta o layout em telas menores */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p, ul {
+        font-size: 1em;
+    }
+}
