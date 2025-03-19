@@ -64,6 +64,10 @@ nav{
     width: 70%;
 }
 
+.menu {
+    display: none;
+}
+
 .btn{
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -349,12 +353,11 @@ footer .column > a:hover{
 }
 
 @media (width < 900px){
-    .nav-links{
-        flex-wrap: wrap;
-    }
+
     header{
         grid-template-columns: repeat(1, 1fr);
     }
+
     header .image{
         grid-area: 1/1/2/2;
     }
@@ -370,6 +373,48 @@ footer .column > a:hover{
 }
 
 @media (width < 600px){
+
+    .menu {
+        display: flex;
+
+        & i {
+            color: white;
+            font-size: 35px;
+        }
+
+        & i:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav-links {
+        display: none;
+        /* Ocultar o menu padrão em telas pequenas */
+        flex-direction: column;
+        gap: 10px;
+        width: 250px;
+        background-color: #323232;
+        border-radius: 10px;
+        position: absolute; /* Faz o menu flutuar sobre outros elementos */
+        top: 80px;  /* Ajuste para a posição desejada */
+        right: 0;
+        padding: 10px;
+        z-index: 1000;  /* Coloca o menu acima de outros elementos com z-index menor */
+        margin-top: 40px;
+        margin-right: 10px;
+        text-align: left;
+        
+    }
+    
+
+    .nav-links.show {
+        display: flex;
+        /* Mostrar o menu quando ativado */
+        padding-right: 0px;
+        background-size: auto;
+        padding: 20px;
+    }
+
     header .image::before{
         display:none ;
     }

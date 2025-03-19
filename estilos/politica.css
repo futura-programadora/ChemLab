@@ -9,14 +9,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #eee3ffa6;
+    background-color: #e9daff;
     color: #333;
     padding: 20px;
 }
 
 /* Estilo para o container principal */
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -68,6 +68,7 @@ a:hover {
     background-color: white;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 /* Responsividade: ajusta o layout em telas menores */

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
     <link rel="stylesheet" href="../estilos/categorias.css">
 </head>
+
 <body>
+    <nav>
+        <div class="nav-logo">
+            <a href="#">
+                <img src="../estilos/imagens/ChemLab-removebg-preview.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="link"><a href="../paginas extras/home.html">Home</a></li>
+            <li id="link1" class="link"><a href="#">Detalhes</a></li>
+            <li id="link2" class="link"><a href="categorias.html">Categorias</a></li>
+            <li id="link3" class="link"><a href="#">Sobre</a></li>
+        </ul>
+
+        <div class="menu">
+            <i onclick="toggleMenu()" class="ri-menu-line"></i>
+        </div>
+    </nav>
     <section class="container">
+
+
         <h2 class="header">Conheça nossas categorias</h2>
         <span class="blur"></span>
         <span class="blur"></span>
@@ -69,7 +91,8 @@
                     <span><i class="ri-git-repository-fill"></i></span>
                     <h4>Conteúdo</h4>
                     <p>
-                        Esses resumos irão te ajudar a estudar para provas de uma maneira mais simples, sem tantos textos e focando nas partes mais importantes.
+                        Esses resumos irão te ajudar a estudar para provas de uma maneira mais simples, sem tantos
+                        textos e focando nas partes mais importantes.
                     </p>
                 </div>
             </a>
@@ -79,13 +102,13 @@
                     <img id="game" src="../estilos/imagens/chemlab.jpg" alt="">
                     <h4>Magic Master</h4>
                     <p>
-                        Conheça nosso game, aprenda de forma divertida.Conheça um mundo divertido e complete todas as missões.
+                        Conheça nosso game, aprenda de forma divertida.Conheça um mundo divertido e complete todas as
+                        missões.
                     </p>
                 </div>
             </a>
         </div>
     </section>
-    <button onclick="javascript:document.location.href='home.html'">Voltar</button>
     <footer class="container">
         <span class="blur"></span>
         <span class="blur"></span>
@@ -98,7 +121,8 @@
             </p>
             <div class="socials">
                 <a href="https://www.youtube.com/@ChemlabOfc" target="_blank"><i class="ri-youtube-line"></i></a>
-                <a href="https://www.instagram.com/chemlabofficial/" target="_blank"><i class="ri-instagram-line"></i></a>
+                <a href="https://www.instagram.com/chemlabofficial/" target="_blank"><i
+                        class="ri-instagram-line"></i></a>
                 <a href="https://x.com/ChemlabOfficial" target="_blank"><i class="ri-twitter-line"></i></a>
             </div>
         </div>
@@ -125,5 +149,7 @@
     <div class="copyright">
         Copyright © 2024 Equipe VionTech. Todos Direitos Reservados.
     </div>
+    <script src="../scripts/script.js"></script>
 </body>
+
 </html>

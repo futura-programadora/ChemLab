@@ -6,12 +6,59 @@
     outline: none;
     border: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #18181B;
     color: white;
+}
+
+nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo{
+    max-width: 100px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.link a{
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #6e00b8;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width: 70%;
+}
+
+.menu {
+    display: none;
 }
 
 button{
@@ -193,6 +240,49 @@ footer .column > a:hover{
 }
 
 @media (width < 600px){
+
+    .menu {
+        display: flex;
+
+        & i {
+            color: white;
+            font-size: 35px;
+        }
+
+        & i:hover {
+            cursor: pointer;
+        }
+    }
+
+    .nav-links {
+        display: none;
+        /* Ocultar o menu padrão em telas pequenas */
+        flex-direction: column;
+        gap: 10px;
+        width: 250px;
+        background-color: #323232;
+        border-radius: 10px;
+        position: absolute; /* Faz o menu flutuar sobre outros elementos */
+        top: 80px;  /* Ajuste para a posição desejada */
+        right: 0;
+        padding: 10px;
+        z-index: 1000;  /* Coloca o menu acima de outros elementos com z-index menor */
+        margin-top: 40px;
+        margin-right: 10px;
+        text-align: left;
+        
+    }
+    
+
+    .nav-links.show {
+        display: flex;
+        /* Mostrar o menu quando ativado */
+        
+        padding-right: 0px;
+        background-size: auto;
+        padding: 20px;
+    }
+    
     header .image::before{
         display:none ;
     }

@@ -1,3 +1,9 @@
+function toggleMenu() {
+    const menu = document.querySelector('.nav-links');
+    menu.classList.toggle('show');
+}
+
+
 function scrollToElement(elementSelector, instance = 0) {
     const elements = document.querySelectorAll(elementSelector);
     if (elements.length > instance) {
