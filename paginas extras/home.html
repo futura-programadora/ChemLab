@@ -193,7 +193,10 @@
     </footer>
 
     <div class="copyright">
-        Copyright © 2024 Equipe VionTech. Todos Direitos Reservados.
+        <p>&copy; <span id="current-year"></span> VionTech Ofc. Todos os direitos reservados.</p>
+        <script>//data do ano
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        </script>
     </div>
 
 
